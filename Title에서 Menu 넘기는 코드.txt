@@ -1,0 +1,21 @@
+타이틀 씬을 먼저 띄우고 마우스 클릭을 했을 때 화면이 넘어가도록 한다.
+
+Canvas에 아래 스크립트를 넣고 SceneToLoad에 다음에 실행될 Scene(Menu) 넣기
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Title : MonoBehaviour
+{
+   public string SceneToLoad;
+
+   void Update()
+   {
+       if (Input.GetMouseButtonDown(0){
+       {
+           SceneManager.LoadScene(SceneToLoad);
+       }
+   }
+}
