@@ -8,7 +8,9 @@ public class Ground : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            Debug.Log("ground");
             HPManager.Life -= 3;
+            SceneManager.LoadScene("Die");
         }
     }
 }
