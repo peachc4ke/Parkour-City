@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BtnSetting : MonoBehaviour
+public class Tutorial_scene : MonoBehaviour
 {
     private bool state;
     void Start()
     {
         state = false;
     }
-    public GameObject Sound;
+    public GameObject Tutorial;
     public void OnSetting()
     {
         if(state == false)
         {
-            Sound.SetActive(true);
+            Tutorial.SetActive(true);
             state = true;
         }
         else
         {
-            Sound.SetActive(false);
+            Tutorial.SetActive(false);
             state = false;
         }
     }
